@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.container{
+    margin:50px 70px 70px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#profile_img{
+    position: relative;
+}
+
+#hover_profile_img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity .2s ease;
+}
+
+#hover_profile_img:hover{
+    opacity: 1;
+}
+
+.share img{
+    display: block;
+}
+
+.share img,.dots img{
+   position: absolute;
+   top: 0;
+   left: 70%;
+}
+
+.dots img{
+    display: none;
+}
+
+ 
+
+.link{
+    position: absolute;
+    top: 0;
+    left: 62%;
+    display: none;
+}
+
+#twitter{
+    margin: 10px 0 20px;
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    padding: 20px;
+    margin: 17px 0;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    background: #D0D5DD;
+}
+
+a{
+ text-decoration: none;
+ color: black;
+ font-family: 'Inter', sans-serif;
+font-weight: bold;
+font-size: 15px;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+     
+    
+}
+
+.img-1{
+    margin-right: 15px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 120px 0 20px;
+    border-top: 1px solid #D0D5DD ;
+    padding-top: 20px;
+}
+
+clipPath: polygon(50% 0%, 0% 100%,100% 100%);
+
+.footer p{
+    color:  #667085;
+}
+
+@media screen and (max-width:768px){
+
+    .container{
+        margin: 40px;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .share img{
+        display: none;
+    }
+
+    .dots img{
+        display: block;
+        left: 90%;
+    }
+
+    .link{
+        display: none;
+    }
+
+}
